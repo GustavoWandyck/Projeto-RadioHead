@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --radiohead-red: #e50914;
+    --radiohead-black: #000000;
+    --radiohead-white: #ffffff;
+    --radiohead-gray: #1c1c1c;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--radiohead-black);
+    color: var(--radiohead-white);
+}
+
+header {
+    background-color: var(--radiohead-black);
+    border-bottom: 2px solid var(--radiohead-red);
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+/* Navbar */
+.nav-link {
+    color: var(--radiohead-white);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--radiohead-red);
+}
+
+/* Hero */
+.inicio-fundo {
+    background-image: url('img/radiocat.jpeg'); /* Usei a Radiocat como fundo */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);
+}
+
+/* Imagem destaque lateral */
+.img-inicio {
+    position: absolute;
+    right: 2rem;
+    bottom: -3rem;
+    width: 35rem;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid var(--radiohead-red);
+}
+
+/* Texto hero */
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.botao-inicio {
+    background-color: var(--radiohead-red);
+    color: var(--radiohead-white);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.botao-inicio:hover {
+    background-color: #b20710;
+}
+
+.display-4 {
+    text-shadow: -4px 4px var(--radiohead-red);
+}
+
+/* História */
+#historia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: var(--radiohead-gray);
+    border-radius: 15px;
+    padding: 3rem;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    color: var(--radiohead-red);
+    text-transform: uppercase;
+}
+
+/* Galeria */
+#galeria {
+    background-color: var(--radiohead-black);
+    border-top: 2px solid var(--radiohead-red);
+    border-bottom: 2px solid var(--radiohead-red);
+}
+
+.fundo-galeria {
+    padding: 2rem;
+    background: var(--radiohead-gray);
+    border-radius: 20px;
+}
+
+/* Contato */
+#contato {
+    background-color: var(--radiohead-gray);
+    padding: 4rem 0;
+    border-radius: 20px;
+}
+
+.formulario {
+    background-color: var(--radiohead-black);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.4);
+    font-weight: bold;
+    color: var(--radiohead-white);
+}
+
+.formulario button {
+    background-color: var(--radiohead-red);
+    border: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #b20710;
+}
+
+.form-control {
+    background-color: var(--radiohead-gray);
+    border: 1px solid #333;
+    color: var(--radiohead-white);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--radiohead-red);
+    box-shadow: 0 0 5px var(--radiohead-red);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--radiohead-black);
+    border-top: 2px solid var(--radiohead-red);
+    color: var(--radiohead-white);
+}
+
+footer i {
+    font-size: 1.5rem;
+    margin: 0 .5rem;
+    color: var(--radiohead-red);
+    transition: transform 0.2s ease;
+}
+
+footer i:hover {
+    transform: scale(1.2);
+}
